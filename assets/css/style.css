@@ -12,7 +12,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: black;
-  color: #000000;
+  color: #ffffff;
 }
 
 a {
@@ -56,7 +56,7 @@ section {
   font-weight: 300;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #555;
+  color: #f35d27;
 }
 
 .section-title p {
@@ -179,7 +179,7 @@ section {
 }
 
 #header.header-scrolled {
-  background: #011746;
+  background: #284b30;
   height: 60px;
 }
 
@@ -202,7 +202,7 @@ section {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 200px;
+  max-height: 100px;
 }
 
 #main {
@@ -353,7 +353,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(7, 56, 57, 0.9);
+  background: rgba(6, 61, 38, 0.9);
   transition: 0.3s;
 }
 
@@ -380,7 +380,7 @@ section {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #073839;
+  color: #07390b;
 }
 
 .navbar-mobile a:hover,
@@ -442,7 +442,7 @@ section {
 
 #hero:before {
   content: "";
-  background: #013d5fd9;
+  background: #23693dd9;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -520,39 +520,47 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
+.about {
+  background-color: #ddfee9d9;
+}
 .about h2 {
-  color: whitesmoke;
+  color: #ff7f50;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;;
 }
 .about img{
-  border-radius: 6%;
+  border-radius: 10%;
   margin-left: 5%;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 400px;
+  width: 500px;
 }
 .about h3 {
   font-weight: 400;
   font-size: 26px;
-  color: white;
+  color: black;
 }
 
 .about p {
-  color: white;
+  color: black;
 }
 
 .about ul {
   list-style: none;
   padding: 0;
-  color: white;
+  color: black;
 }
 
 .about ul li {
   padding-bottom: 10px;
-  color: white;
+  color: black;
 }
 
 .about ul i {
   font-size: 22px;
   padding-right: 4px;
-  color: #ffffff;
+  color: black;
   line-height: 0;
 }
 
@@ -563,7 +571,9 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-
+.services {
+  background-color: #ddfee9d9;
+}
 .services .icon-box {
   margin-bottom: 20px;
   text-align: center;
@@ -576,31 +586,31 @@ section {
 }
 
 .services .icon i {
-  color: #c2b8fb;
+  color: #000000;
   font-size: 42px;
 }
 
 .services .title {
-  font-weight: 700;
+  font-weight: bold;
   margin-bottom: 15px;
   font-size: 18px;
   text-transform: uppercase;
 }
 .services h2 {
-  color: white;
+  color: #ff7f50;
 }
 
 .services p {
-  color: white;
+  color: black;
 }
 
 .services .title a {
-  color: #ffffff;
+  color: black;
   transition: 0.5s;
 }
 
 .services .icon-box:hover .title a {
-  color: #4a5dc4;
+  color: #ff7f50;
 }
 
 .services .description {

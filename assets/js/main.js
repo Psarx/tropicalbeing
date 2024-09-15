@@ -19,7 +19,35 @@
       return document.querySelector(el)
     }
   }
-
+  function typeWriter(text, element) {
+    const interval = setInterval(() => {
+      element.textContent += text.charAt(element.textContent.length);
+      if (element.textContent === text) {
+        clearInterval(interval);
+      }
+    }, 100); // Adjust the interval for typing speed
+  }
+  
+  const typedH1 = document.getElementById("typed-h1");
+  const typedH2 = document.getElementById("typed-h2");
+  
+  // Text content for each element
+  const h1Text = "Welcome to ";
+  const h2Text = "We are team united to explore, innovate, and excel in the world of computer science.";
+  
+  // Add "studio tropical being" with its styling within the function for H1
+  function typeH1() {
+    typeWriter(h1Text, typedH1);
+    setTimeout(() => {
+      const span = document.createElement("span");
+      span.textContent = "studio tropical being";
+      span.style.color = "#ff7f50";
+      span.style.fontWeight = "bold";
+      typedH1.appendChild(span);
+    }, h1Text.length * 100); // Add delay after typing first part
+  }
+  typeH1();
+  typeWriter(h2Text, typedH2);
   /**
    * Easy event listener function
    */
