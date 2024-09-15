@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: black;
+  background-color: #ddfee9d9;
   color: #ffffff;
 }
 
@@ -522,20 +522,41 @@ section {
 --------------------------------------------------------------*/
 .about {
   background-color: #ddfee9d9;
+  background: repeating-linear-gradient(
+        to right,
+        rgba(242, 181, 50, 0.1), /* Vertical lines */
+        rgba(247, 129, 32, 0.1) 2px, /* Line thickness */
+        transparent 2px,
+        transparent 150px /* Spacing between vertical lines */
+    ),
+    repeating-linear-gradient(
+        to bottom,
+        rgba(242, 181, 50, 0.1), /* Horizontal lines */
+        rgba(0, 0, 0, 0.1) 2px, /* Line thickness */
+        transparent 2px,
+        transparent 150px /* Spacing between horizontal lines */
+    );
+  padding: 60px 0; /* Padding for space around the section */
 }
+
 .about h2 {
   color: #ff7f50;
   font-weight: bold;
-  font-family: "Open Sans", sans-serif;;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
 }
-.about img{
+
+.about img {
   border-radius: 10%;
   margin-left: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
   height: 400px;
-  width: 500px;
+  width: 100%; /* Full width image on smaller screens */
+  max-width: 500px; /* Max width for larger screens */
 }
+
 .about h3 {
   font-weight: 400;
   font-size: 26px;
@@ -559,14 +580,31 @@ section {
 
 .about ul i {
   font-size: 22px;
-  padding-right: 4px;
-  color: black;
+  padding-right: 8px;
+  color: #ff7f50; /* Checkmark color matching header */
   line-height: 0;
 }
 
 .about p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0; 
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about img {
+    height: auto;
+    width: 100%; /* Full width on smaller screens */
+  }
+  
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about h3 {
+    font-size: 22px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Services
