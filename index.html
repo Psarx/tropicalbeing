@@ -83,11 +83,43 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <h1 >Welcome to <span style="color: #ff7f50;font-weight: bold;">studio tropical being.</span></h1>
-      <h2>Crafting Architectural Marvels in the Heart of Kerala.</h2>
+      <h1>Welcome to <span id="typed-studio" style="color: #ff7f50; font-weight: bold;"></span></h1>
+      <h2>Crafting <span id="typed-text"></span> in the Heart of Kerala.</h2>
       <a href="#about" class="btn-get-started scrollto">Know More</a>
     </div>
   </section>
+  
+  <!-- Include Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Typing effect for "Studio Tropical Being"
+      var typedStudio = new Typed('#typed-studio', {
+        strings: ['Studio Tropical Being.'],
+        typeSpeed: 150,
+        backSpeed: 50,
+        startDelay: 500,
+        backDelay: 3000,
+        loop: false,
+        showCursor: false,  // No cursor for this text
+        onComplete: function () {
+          typedText.start(); // Start the second typing effect after this one completes
+        }
+      });
+  
+      // Typing effect for the second line
+      var typedText = new Typed('#typed-text', {
+        strings: ['Architectural Marvels', 'Innovative Designs', 'Breathtaking Creations'],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 1000,
+        startDelay: 500,
+        loop: true
+      });
+    });
+  </script>
+  
 
   <main id="main">
 
