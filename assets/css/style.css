@@ -12,7 +12,20 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #ddfee9d9;
-  color: #ffffff;
+  background: repeating-linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.1), /* Vertical grid lines */
+        rgba(0, 0, 0, 0.1) 2px, /* Line thickness */
+        transparent 2px,
+        transparent 150px /* Spacing between vertical lines */
+    ),
+    repeating-linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1), /* Horizontal grid lines */
+        rgba(0, 0, 0, 0.1) 2px, /* Line thickness */
+        transparent 2px,
+        transparent 150px /* Spacing between horizontal lines */
+    );
 }
 
 a {
@@ -522,21 +535,6 @@ section {
 --------------------------------------------------------------*/
 .about {
   background-color: #ddfee9d9;
-  background: repeating-linear-gradient(
-        to right,
-        rgba(242, 181, 50, 0.1), /* Vertical lines */
-        rgba(247, 129, 32, 0.1) 2px, /* Line thickness */
-        transparent 2px,
-        transparent 150px /* Spacing between vertical lines */
-    ),
-    repeating-linear-gradient(
-        to bottom,
-        rgba(242, 181, 50, 0.1), /* Horizontal lines */
-        rgba(0, 0, 0, 0.1) 2px, /* Line thickness */
-        transparent 2px,
-        transparent 150px /* Spacing between horizontal lines */
-    );
-  padding: 60px 0; /* Padding for space around the section */
 }
 
 .about h2 {
@@ -698,11 +696,14 @@ section {
 # Our Portfolio
 --------------------------------------------------------------*/
 .portfolio {
-  padding: 60px 0;
+  background-color: #ddfee9d9;
 }
+
 .portfolio h2 {
-  color: white;
+  color: #ff7f50;
+  font-weight: bold;
 }
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 0 35px 0;
