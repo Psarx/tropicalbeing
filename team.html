@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ACM Student Chapter FISAT</title>
+  <title>tropicalbeing</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -83,11 +83,42 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <h1>EXECOM 2022-23</h1>
+      <h1><span id="typed-studio" style="color: #ff7f50; font-weight: bold;"></span></h1>
       <h2>We are team united to explore, innovate, and excel in the world of computer science.</h2>
       <!-- <a href="#about" class="btn-get-started scrollto">REGISTER NOW</a> -->
+      
     </div>
   </section><!-- #hero -->
+  <!-- Include Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Typing effect for "Studio Tropical Being"
+      var typedStudio = new Typed('#typed-studio', {
+        strings: ['Our Team.'],
+        typeSpeed: 150,
+        backSpeed: 50,
+        startDelay: 500,
+        backDelay: 3000,
+        loop: false,
+        showCursor: false,  // No cursor for this text
+        onComplete: function () {
+          typedText.start(); // Start the second typing effect after this one completes
+        }
+      });
+  
+      // Typing effect for the second line
+      var typedText = new Typed('#typed-text', {
+        strings: ['Architectural Marvels', 'Innovative Designs', 'Breathtaking Creations'],
+        typeSpeed: 60,
+        backSpeed: 40,
+        backDelay: 1000,
+        startDelay: 500,
+        loop: true
+      });
+    });
+  </script>
 
   <main id="main">
 
