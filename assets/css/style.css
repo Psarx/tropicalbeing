@@ -859,6 +859,7 @@ section {
 --------------------------------------------------------------*/
 .faq {
   padding: 60px 0;
+  background-color: #07390b;
 }
 .faq h2 {
   color: white;
@@ -884,8 +885,8 @@ section {
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #5851a5;
-  transition: 0.3s;
+  color: #ff7f50;
+  transition: 0.4s;
 }
 
 .faq .faq-list i {
@@ -910,24 +911,27 @@ section {
 }
 
 .faq .faq-list .collapsed:hover {
-  color: #7071b9;
+  color: #ff7f50;
 }
 
 .faq .faq-list .collapsed .icon-show {
   display: inline-block;
-  transition: 0.6s;
+  transition: 0.4s;
 }
 
 .faq .faq-list .collapsed .icon-close {
   display: none;
-  transition: 0.6s;
+  transition: 0.4s;
 }
 
 /*--------------------------------------------------------------
 # Our Team
 --------------------------------------------------------------*/
+.team{
+  background-color: #ddfee9d9;
+}
 .team h2 {
-  color: white;
+  color: #ff7f50;
   font-weight: bold;
 }
 .team .member {
@@ -981,6 +985,7 @@ section {
   font-size: 18px;
   margin: 0 2px;
 }
+
 
 /*--------------------------------------------------------------
 # Contact Us
